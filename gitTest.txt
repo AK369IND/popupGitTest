@@ -12,3 +12,11 @@ Learned about:
 		git add
 		git commit -m ""
 		git status
+		
+		git diff
+		git diff --staged
+		
+		git commit -a -m "directly commit tracked files"
+		
+		git rm <file>
+		git rm --cached <file> # for keeping in working dir but adding to ignore
