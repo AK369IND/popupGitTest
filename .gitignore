@@ -1,0 +1,7 @@
+# dont track object or archive files
+
+*.[ao]
+
+# dont track files in this directory
+ignoreDir/
+
