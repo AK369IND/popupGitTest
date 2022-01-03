@@ -6,9 +6,51 @@ Learned about:
 	3 Git config file levels
 	states of a file: tracked, untracked, modified, staged, unstaged, .gitignore file
 	Commands:
-		git clone <url>
+		# mirror an existing repo and it creates .git file itself
+		git clone <url> <dir name if any>
 
+		# create new .git file i.e. new git repo
 		git init
 		git add
 		git commit -m ""
 		git status
+		
+		git diff
+		git diff --staged
+		
+		git commit -a -m "directly commit tracked files"
+		
+		git rm <file>
+		git rm --cached <file> # for keeping in working dir but adding to ignore
+		
+		# Git cant detect file movement, but using mv command it can rename a file
+		git mv <from_file> <to_file>
+		# equivalent to 3 commands of mv, rm, add
+		
+		git log
+		git log -p -2 #shows diff between last 2 commits only
+		git log --stat # summary of diffs
+		git log --pretty=oneline
+		git log --pretty=format"%h - %an, %ar : %s"
+		# this creates a format:
+		#	abbrevated hash - author name, author date relative : subject
+		
+		author and committer are different sometimes
+		
+		git log --pretty=format" " --graph # branch ASCII graphs
+		git log --since="<format>"
+		git log --author=""
+		git log --grep="<pattern in commit messages>
+		
+		git log -S <funcName or any string in files that changed>
+		# so it shows those commits which changed the number of occurences of <>
+		
+		git log -- <path for dir or file>
+		# shows commits containing changes in these files
+		
+		git log --no-merges # prevents displaying commit merges
+		
+		git commit --amend #replaces last commit
+		
+		
+		
