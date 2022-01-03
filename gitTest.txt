@@ -1,1 +1,14 @@
 This is a test for git cmds
+
+Learned about:
+	VCSs
+	Git what, why
+	3 Git config file levels
+	states of a file: tracked, untracked, modified, staged, unstaged, .gitignore file
+	Commands:
+		git clone <url>
+
+		git init
+		git add
+		git commit -m ""
+		git status
