@@ -51,6 +51,38 @@ Learned about:
 		git log --no-merges # prevents displaying commit merges
 		
 		git commit --amend #replaces last commit
+	
+		#old undos
+			git reset HEAD <filename> # to unstage a staged file
+			git checkout -- <filename> # unmodifying a modified file
+			# reverts the file to its last staged or commit state
+			# this also deletes any unstaged or committed changes to file in your local dir
+		#current undos, same actions
+		git restore --staged <filename> # to unstage a staged file
+		git restore <filename> # to unmodify a modified file
+		
+		git clone <url> # adds origin implicitly
+		git remote -v # lists all remote repos linked to local repo
+		
+		# to add origin explicitly with custom name
+		git remote add <custom name> <url>
+		
+		git fetch <remote origin name> 
+		# downloads all the data from remote linked repo that is not present locally in our repo
+		# but does not merge it automatically
+		
+		git pull <remote origin name> # fetch and merge locally
+		# pull.rebase must be set to auto merge when fetching
+		git config --global pull.rebase "true"
+		
+		git push <remote origin name> <our branch to push> # push to a remote repo but heads must be same
+		
+		git remote show <remote origin name> # inspect remote origin
+		
+		git remote rename <oldname> <newname for remote> # rename remote
+		git remote remove <remote name> # remove remote
+		# or just git remote rm <remote>
+		 
 		
 		
 		
