@@ -125,6 +125,12 @@ Learned about:
 		git checkout <branchname>
 		
 		git log --all # shows all the logs of all branches
+		
+		# also using switch
+		git switch -c <newbranch name> # creates and then switches to it
+		git switch <olderbranch> # swithces to other branch
+		
+		
 		 
 		
 		
