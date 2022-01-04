@@ -22,6 +22,7 @@ Learned about:
 		
 		git rm <file>
 		git rm --cached <file> # for keeping in working dir but adding to ignore
+<<<<<<< HEAD
 		
 		# Git cant detect file movement, but using mv command it can rename a file
 		git mv <from_file> <to_file>
@@ -86,3 +87,5 @@ Learned about:
 		
 		
 		
+=======
+>>>>>>> 26b38b6c9afad2221a4e58c0ca491f915eac6467
