@@ -82,6 +82,56 @@ Learned about:
 		git remote rename <oldname> <newname for remote> # rename remote
 		git remote remove <remote name> # remove remote
 		# or just git remote rm <remote>
+		
+		git tag  # lists all tags in a repo i.e. marks in the repos history
+		git tag -l "<pattern>"
+		
+		git tag -a <tagname> -m "<message>" # create annotation tag with details
+		git tag <tagname> # creates a lightweight tag without details
+		
+		git show <tagname> # shows details of the tag
+		
+		# to add a tag to older commit
+		git tag -a <tagname> <checksum of the commit or just starting part of checksum>
+		
+		# with push command for branches, tags arent auto pushed, we have to pish them separately
+		git push <remote origin> <tagname>
+		# to push all tags both annotated and lw
+		git push <remote origin> --tags
+		
+		git tag -d <tagname> # to delete tag locally
+		git push <remote origin> --deleted <tagname># delete tags remotely
+		
+		# to checkout a tag to see what version its pointing to i.e. moving your head
+		git checkout <tagname>
+		# any commits here will not be in any branch and only accessible via hashes
+		# to create commits that stay, create a new bracnh at that tag
+		git checkout -b <branchname> <tagname>
+		
+		# create aliases for commands
+		git config --global alias.<aliasname> <command>
+		# combine example
+		git config --global alias.unstage 'restore --staged'
+		# now simply 
+		git unstage <file>
+		
+		
+		# creating new branch at the current commit i.e. the commit where head is pointing to
+		git branch <name>
+		# to check branch pointers
+		git log --oneline --decorate
+		
+		# change head pointer i.e. moves head to other branch
+		git checkout <branchname>
+		
+		git log --all # shows all the logs of all branches
+		
+		# also using switch
+		git switch -c <newbranch name> # creates and then switches to it
+		git switch <olderbranch> # swithces to other branch
+		
+		
+		
 		 
 		
 		
