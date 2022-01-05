@@ -130,6 +130,11 @@ Learned about:
 		git switch -c <newbranch name> # creates and then switches to it
 		git switch <olderbranch> # swithces to other branch
 		
+		# merge main with new branch
+		git checkout main
+		git merge <newbranch>
+		
+		
 		
 		 
 		
